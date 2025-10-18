@@ -11,30 +11,42 @@
 </head>
 <body>
     <header>
-        <h1>Recursos para los desarrolladores</h1>
-        <nav title="Menú principal">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="misjuegos.html">mis juegos</a></li>
-                <li><a href="recursos.html" aria-disabled="true">Recursos para los desarrolladores</a></li>
-            </ul>
-        </nav>
+        <h1 id="título">Recursos para los desarrolladores</h1>
+        <a href="#principal">ir al contenido principal</a>
+        <div>
+            <details>
+                <summary>menú principal.</summary>
+                <nav title="Menú principal">
+                    <ul>
+                        <li><a href="index.html" id="inicio">Inicio</a></li>
+                        <li><a href="misjuegos.html" id="juegos">mis juegos</a></li>
+                        <li><a href="recursos.html" aria-disabled="true" id="recursos">Recursos para los desarrolladores</a></li>
+                        <li><a href="noticias.html">noticias</a></li>
+                    </ul>
+                </nav>
+            </details>
+        </div>
     </header>
-    <main title="Contenido principal.">
-        <h2>Recursos para los desarrolladores</h2>
-        <p>Aquí encontrarás algunos recursos útiles para desarrolladores que he desarrollado, especialmente para facilitar el desarrollo de juegos accesibles en python con pygame. Para poder aprovechar estos recursos, es importante tener instaladas las siguientes herramientas de las que depende:</p>
-                <ul>
-            <li><a href="https://www.python.org/downloads/">Python</a>: Es el lenguaje de programación en el que están desarrollados estos juegos, y es importante aprenderlo si se desea contribuir con el desarrollo del mismo. <strong>Nota: En el caso de live history, hay un 80% de probabilidad de que sea desarrollado en nvgt, por lo que también es importante aprender a programar en este motor de juegos.</strong></li>
-            <li><a href="https://www.pygame.org/download.shtml">Pygame</a>: Es el motor de juegos más conocido de python, el cual envuelve la librería sdl de c++. Es sobre este motor de juegos, pygame, que están desarrollados todos los módulos python que verán en esta página.</li>
-            <li><a href="https://pypi.org/project/accessible-output3/">Accessible output 3</a>/<a href="https://github.com/m1maker/SRAL">sral</a>: Son librerías responsables de la accesibilidad con el lector de pantalla, y son la clave para hacer software completamente accesible en python.</li>
-            <li><a href="https://pypi.org/project/pyperclip/">Pyperclip</a>: Módulo que aprovecha la API del sistema bajo el que se ejecuta para copiar y pegar contenido del portapapeles, principalmente necesario en los módulos historia y audio interfaz publicados aquí.</li>
-        </ul>
-    </main>
-    <footer title="Pie de página">
-        <h2>Contacto</h2>
-        <p>para más información, visite mi <a href="https://github.com/yoisber2004/">github</a>.</p>
-        <p>Puede ponerse en contacto con migo por <a href="yoisberg2019@gmail.com">correo electrónico</a></p>
-    </footer>
-
+    <div>
+        <main title="Contenido principal." id="principal">
+            <h2>Recursos para los desarrolladores</h2>
+            <p>Aquí encontrarás algunos recursos útiles para desarrolladores que he desarrollado, especialmente para facilitar el desarrollo de juegos accesibles en python con pygame. Para poder aprovechar estos recursos, es importante tener instaladas las siguientes herramientas de las que depende:</p>
+            <ul>
+                <li><a href="https://www.python.org/downloads/">Python</a>: Es el lenguaje de programación en el que están desarrollados estos juegos, y es importante aprenderlo si se desea contribuir con el desarrollo del mismo. <strong>Nota: En el caso de live history, hay un 80% de probabilidad de que sea desarrollado en nvgt, por lo que también es importante aprender a programar en este motor de juegos.</strong></li>
+                <li><a href="https://www.pygame.org/download.shtml">Pygame</a>: Es el motor de juegos más conocido de python, el cual envuelve la librería sdl de c++. Es sobre este motor de juegos, pygame, que están desarrollados todos los módulos python que verán en esta página.</li>
+                <li><a href="https://pypi.org/project/accessible-output3/">Accessible output 3</a>/<a href="https://github.com/m1maker/SRAL">sral</a>: Son librerías responsables de la accesibilidad con el lector de pantalla, y son la clave para hacer software completamente accesible en python.</li>
+                <li><a href="https://pypi.org/project/pyperclip/">Pyperclip</a>: Módulo que aprovecha la API del sistema bajo el que se ejecuta para copiar y pegar contenido del portapapeles, principalmente necesario en los módulos historia y audio interfaz publicados aquí.</li>
+            </ul>
+            <a href="index.html#recursos">volver a la página de inicio</a>
+        </main>
+    </div>
+    <div>
+        <footer title="Pie de página">
+            <h2>Contacto</h2>
+            <p>para más información, visite mi <a href="https://github.com/yoisber2004/">github</a>.</p>
+            <p>Puede ponerse en contacto con migo por <a href="yoisberg2019@gmail.com">correo electrónico</a></p>
+            <a href="#título">volver arriba</a>
+        </footer>
+    </div>
 </body>
 </html>
